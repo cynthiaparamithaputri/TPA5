@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(16, 19, 22);
+    background-color: rgb(215, 157, 112);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-form {
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.custom-form label {
+    font-weight: 600;
+}
+
+.input-and-btn .btn,
+.wrapper .btn {
+    color: rgb(215, 157, 112);
+    background-color: rgb(16, 19, 22);
+    border: none;
+}
+
+.input-and-btn .btn:hover,
+.wrapper .btn:hover {
+    background-color: rgb(176, 88, 66);
+    color: white;
+}
+
+.input-and-btn {
+    display: flex;
+}
+
+.todo-box {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-box .content {
+    display: flex;
+}
+
+.todo-box .content p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.todo-box span {
+    margin: 0 5px;
+}
+
+.delete-all {
+    width: 10rem;
+}
+
+.actions-box {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.back-btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media only screen and (max-width:720px) {
+    .custom-form {
+        width: 300px;
+    }
+    .todo-box {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .custom-form {
+        width: 200px;
+    }
+    .todo-box {
+        width: 250px;
+    }
+    .todo-box .content p {
+        font-size: 0.75rem;
+    }
+}
